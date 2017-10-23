@@ -32,7 +32,7 @@ Installation guide:
 
 1. The installation of MongoDB and deployd is required.
 2. Download the whole folder from this github account.
-3. Go to the project directory and start the server using command dpd using a command line.
+3. Go to the project directory and start the server using dpd using a command line.
 4. For the files upload and  download to work, we need to first install dpd-fileupload using the command,
 		npm install dpd-fileupload --save
 
