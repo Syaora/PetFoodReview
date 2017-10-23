@@ -1,0 +1,83 @@
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: #337ab7;
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.panel-default{
+  background: #f2f2f2;
+  border: solid 3px #000000;
+}
+
+.main-header {
+  flex: 0 1 auto;
+}
+
+.logo-text {
+  background: white;
+  font-family: lakeshore;
+  font-size: 37px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.main-content {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+}
+
+.txt-center {
+  text-align: center;
+}
+
+.hide {
+  display: none;
+}
+
+.clear {
+  clear: both;
+  float: none;
+}
+
+.rating {
+  direction: rtl;
+  position: relative;
+  text-align: center;
+  unicode-bidi: bidi-override;
+  width: 90px;
+}
+
+.rating > label {
+  color: #000;
+  cursor: pointer;
+  display: inline;
+  padding: 0;
+  position: relative;
+}
+
+.rating > label:hover,
+.rating > label:hover ~ label,
+.rating > input.radio-btn:checked ~ label {
+  color: transparent;
+}
+
+.rating > label:hover:before,
+.rating > label:hover ~ label:before,
+.rating > input.radio-btn:checked ~ label:before,
+.rating > input.radio-btn:checked ~ label:before {
+    color: #FFD700;
+    content: "\2605";
+    left: 0;
+    position: absolute;
+}

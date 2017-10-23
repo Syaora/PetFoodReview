@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>projectOne_petFoodReviews</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="stylesheets/styles.css">
+  <style>
+    form :focus:required:invalid {
+      border-color: #a94442;
+    }
+  </style>
+</head>
+
+<body class="container">
+  <header>
+    <h1>Submit Your Review:</h1>
+  </header>
+  <section>
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <form data-food-review="form">
+          <label for="nameInput">Do you wish to post anonymously?</label>
+          <div class="radio">
+            <label>
+              <input type="radio" name="anonymous" value="yes" />
+              Yes
+            </label>
+          </div>
+          <div class="form-group">
+            <label for="nameInput">Name:</label>
+            <input class="form-control" type="text" name="fullName" id="nameInput" value="" placeholder="Jane Doe" required />
+          </div>
+          <div class="form-group">
+            <label for="emailInput">Email:</label>
+            <input class="form-control" type="email" name="emailAddress" id="emailInput" value="" placeholder="janedoe@email.com" required />
+          </div>
+          <label for="starRating">Star Rating: </label>
+          <div class="rating">
+            <input id="star5" name="star" type="radio" value="5" class="radio-btn hide" />
+            <label for="star5">☆</label>
+            <input id="star4" name="star" type="radio" value="4" class="radio-btn hide" />
+            <label for="star4">☆</label>
+            <input id="star3" name="star" type="radio" value="3" class="radio-btn hide" />
+            <label for="star3">☆</label>
+            <input id="star2" name="star" type="radio" value="2" class="radio-btn hide" />
+            <label for="star2">☆</label>
+            <input id="star1" name="star" type="radio" value="1" class="radio-btn hide" />
+            <label for="star1">☆</label>
+            <div class="clear"></div>
+          </div>
+          <div class="form-group">
+            <label for="flavorShot"><br>Overall Level of Satisfaction:<br></label>
+            <select id="flavorShot" class="form-control" name="flavor">
+                <option value=""></option>
+                <option value="verySatisfied">Very satisfied</option>
+                <option value="satisfied">Satisfied</option>
+                <option value="ok">OK</option>
+                <option value="disatisfied">Disatisfied</option>
+                <option value="veryDisatisfied">Very disastisfied</option>
+
+              </select>
+          </div>
+          <label for="foodReview">Food Review</label>
+          <div class="form-group">
+            <textarea class="form-control" name="foodReview" style="height:150px; resize:none" wrap="soft"></textarea>
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+          <button type="reset" class="btn btn-default">Reset</button>
+        </form>
+      </div>
+    </div>
+
+  </section>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js" charset="utf-8"></script>
+  <script type="text/javascript" src="scripts/validation.js" charset="utf-8"></script>
+  <script type="text/javascript" src="scripts/checklist.js" charset="utf-8"></script>
+  <script type="text/javascript" src="scripts/formhandler.js" charset="utf-8"></script>
+  <script type="text/javascript" src="scripts/remotedatastore.js" charset="utf-8"></script>
+  <script type="text/javascript" src="scripts/datastore.js" charset="utf-8"></script>
+  <script type="text/javascript" src="scripts/truck.js" charset="utf-8"></script>
+  <script type="text/javascript" src="scripts/main.js" charset="utf-8"></script>
+</body>
+
+</html>
